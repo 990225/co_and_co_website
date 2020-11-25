@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hyunjong KIM" />
+    <title>co&co Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="js/animate.js" defer></script>
+    <script src="js/slide.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <svg viewBox="0 0 384 91">
+          <path
+            d="M517.2 1271c-2.7-.7-5.6-1.2-8.2-2.2-9.8-3.9-15.6-13.3-15.5-24.8.1-8.6 2.7-16.2 10-21.4 4-2.8 8.6-3.9 13.8-4-1.1-1.5-1.9-2.7-2.8-3.9-3.9-5.2-5.8-11-4.6-17.4 1.6-9.4 9.4-16 19.6-16.8 3-.2 6.1-.3 9 .2 11.1 1.7 17.3 8.3 19.3 20.2.4 2.2.4 4.5.7 6.9h-13.8c-.1-1.9-.2-3.9-.4-5.9-.6-5.5-4.5-9.2-10-9.4-5.8-.3-9.9 2.5-10.9 7.5-.7 3.6.1 6.9 2.3 9.7 4 5.2 8.2 10.4 12.4 15.5 11.7 14.2 23.4 28.4 35.1 42.7.5.5.8 1.1 1.6 2.1-4.9 0-9.4.1-13.9-.1-.7 0-1.5-.7-2-1.3-4.5-5-8.9-10-13.3-15-.5-.6-.9-1.3-1.7-2.4-.7 2-1.2 3.3-1.5 4.5-2.4 8.3-8.2 12.9-16.5 14.7-.6.1-1.1.3-1.7.5-2.3.1-4.7.1-7 .1zm-11.1-27.1c0 8.7 6.1 14.8 14.9 14.8 8.1 0 13.8-5.7 13.9-13.7 0-8.5-6.8-15.2-15.3-15.3-8.3.1-13.5 5.5-13.5 14.2zM680.9 1271c-3.5-.9-7.1-1.4-10.4-2.7-11.9-4.8-18.3-14.1-20.2-26.6-1.1-7.2-.6-14.4 2.2-21.2 5.8-13.7 16.7-20.1 31.1-20.5 13.3-.4 24.5 4 31.7 15.9 4.9 8.1 5.8 17.1 4.4 26.2-2.5 16.2-12.7 26-28.9 28.5-.5.1-1 .3-1.4.4h-8.5zm-16.4-35.5c.3 2.2.4 4.5.8 6.7 1.9 9.6 9.2 15.7 19 16.2 9.2.5 17.1-5.2 19.9-14.2 1.5-4.9 1.6-9.9.7-14.9-3.7-18.9-23.7-20.3-32.9-12.3-5.6 4.8-7.3 11.3-7.5 18.5zM444.9 1271c-2.5-.6-5.1-1-7.6-1.7-13.8-4.2-22.4-15.8-23.3-31.2-.5-9.1 1.1-17.7 6.8-25.1 9-11.5 21.2-14.5 35-12.6 10.7 1.5 19 6.9 24.3 16.6 6.3 11.5 6.5 33.3-6 44.8-5.2 4.8-11.4 7.6-18.3 8.7-.8.1-1.6.3-2.4.5h-8.5zm-16.3-36c.3 2.6.4 4.8.8 6.9 1.8 9.6 9.2 16 19.1 16.5 9.5.5 17.5-5.4 20.1-14.8 1.3-4.9 1.3-9.8.4-14.7-1.8-9.7-9.2-16.1-19.1-16.4-9.8-.4-17.6 5.4-20.1 15.1-.7 2.4-.9 5.1-1.2 7.4zM604.6 1271c-2.8-.6-5.6-1-8.3-1.9-12.5-4.1-20.8-15.2-21.8-28.8-.6-7.9 0-15.7 3.7-23 6-11.9 18.3-18.3 32.8-17.4 11.4.7 20.8 5 26.7 15.1 1.9 3.3 3 7.2 4.7 11.3-5.5 0-10.3 0-15-.1-.4 0-1-.9-1.2-1.5-2.7-7.8-8.2-11.9-16.7-12.3-8-.4-15.2 3.8-18.1 10.9-3.1 7.6-3.1 15.4-.4 23.1 2.8 7.7 9.8 12.2 18.2 12 8.5-.2 14.3-4.5 17.1-12.6.2-.6 1-1.4 1.5-1.4 4.6-.1 9.2-.1 14-.1-1.3 7.9-4.7 14.4-10.8 19.4-4.6 3.8-10 6-15.9 6.8-.7.1-1.3.3-1.9.5h-8.6zM368.6 1271c-2.5-.5-5.1-.9-7.6-1.7-10.3-3.3-17.3-10.2-20.6-20.6-2.8-8.6-2.8-17.3-.3-26 4.5-15.3 18.4-24.1 35.3-22.9 11.3.8 20.6 5.1 26.4 15.1 1.9 3.3 3 7.2 4.7 11.3h-14.8c-.5 0-1.1-.6-1.3-1.1-3.9-9.5-10.2-13.6-19.6-12.7-9 .9-15.2 6.6-16.9 16.2-1.3 6.8-1 13.5 2.2 19.9 3.4 6.8 10.5 10.5 18.5 9.8 8.1-.7 13.4-5 15.8-12.8.1-.3.2-.6.4-1.1h15.1c-1.5 9-5.9 16.2-13.5 21.2-4 2.6-8.4 4.1-13.1 4.8-.7.1-1.5.3-2.2.5-2.8.1-5.7.1-8.5.1z"
+            transform="translate(-337 -1180)"
+          ></path>
+        </svg>
+      </a>
+
+      <button class="nav__btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav class="nav hide">
+      <div class="nav__bg-1"></div>
+      <div class="nav__bg-2"></div>
+
+      <div class="wrap">
+        <ul class="nav__link">
+          <li class="nav__link__item">
+            <a href="#">Who we are</a>
+          </li>
+          <li class="nav__link__item">
+            <a href="#">What we do</a>
+          </li>
+          <li class="nav__link__item">
+            <a href="#">What we think</a>
+          </li>
+          <li class="nav__link__item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="nav__contact">
+          <li class="nav__contact__item">Let's chat</li>
+          <li class="nav__contact__item">
+            <a href="#">hello@abcde.com</a>
+          </li>
+          <li class="nav__contact__item">
+            <a href="#">010 1234 5678</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="video">
+      <a class="video__link" href="#">
+        <span></span>
+      </a>
+
+      <div class="video__screen__cover"></div>
+
+      <iframe
+        class="video__screen"
+        src="https://player.vimeo.com/video/454661729?background=1&amp;autoplay=1&amp;loop=1&amp;byline=0&amp;title=0&amp;muted=1"
+        frameborder="0"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen
+        allow="autoplay"
+      ></iframe>
+
+      <div class="wrap">
+        <h1 class="video__marketing__title init">
+          No fluff. No bull.<br />
+          Just mega marketing.
+        </h1>
+
+        <a class="video__link init" href="#">
+          <span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="text">
+      <div class="wrap">
+        <h1 class="text__title init">
+          We are a straight-talking, results driven marketing consultancy in
+          Manchester that always deliver. Simple.
+        </h1>
+
+        <p class="text__description init">
+          We are a team of results driven marketing specialists. We work with
+          businesses that don't have the resources, knowledge, time or expertise
+          to devise and execute a successful marketing strategy. Our
+          straightforward, commercially minded approach to everything we do
+          ensures our clients get results that impact their bottom line. We only
+          deliver good work. No compromises.<br /><br />
+          Unlike traditional consultancies who come in, assess the immediate
+          objectives, and leave the client with a long to do list and a big
+          invoice - we partner with our clients for the long term. We believe
+          that money is won and lost in the strategy, so we work with our
+          clients to deliver a solid plan and collaborate with the best in the
+          business on the implementation and execution. We like seeing our plans
+          in action and our clients succeed – after all, makes us look good
+          doesn’t it.
+        </p>
+      </div>
+    </section>
+
+    <section class="best">
+      <div class="wrap">
+        <h1 class="best__title init">What we do best</h1>
+
+        <a class="best__article init" href="#">
+          <ul class="best__article__link">
+            <li class="best__article__link__item">
+              <img
+                src="https://wearecoandco.com/uploads/transforms/526d6ad403dc39030454d952c1c75d99/2121/coandco-brand-gen-27_d6b61a895725e9d8cf5efd22813ca7ca.webp"
+                alt="Commercial Marketing Services Image"
+              />
+            </li>
+            <li class="best__article__link__item">
+              Commercial Marketing Services
+            </li>
+            <li class="best__article__link__item">Find out more</li>
+          </ul>
+        </a>
+
+        <a class="best__article init" href="#">
+          <ul class="best__article__link">
+            <li class="best__article__link__item">
+              <img
+                src="https://wearecoandco.com/uploads/transforms/526d6ad403dc39030454d952c1c75d99/2114/coandco-brand-gen-20_d6b61a895725e9d8cf5efd22813ca7ca.webp"
+                alt="Digital Services Image"
+              />
+            </li>
+            <li class="best__article__link__item">Digital Services</li>
+            <li class="best__article__link__item">Find out more</li>
+          </ul>
+        </a>
+
+        <a class="best__article init" href="#">
+          <ul class="best__article__link">
+            <li class="best__article__link__item">
+              <img
+                src="https://wearecoandco.com/uploads/transforms/0d9d178e109071c355a7ae782f7541dc/12/pexels-bongkarn-thanyakij-3787293_d6b61a895725e9d8cf5efd22813ca7ca.webp"
+                alt="Creative Services Image"
+              />
+            </li>
+            <li class="best__article__link__item">Creative Services</li>
+            <li class="best__article__link__item">Find out more</li>
+          </ul>
+        </a>
+
+        <a class="best__article init" href="#">
+          <ul class="best__article__link">
+            <li class="best__article__link__item">
+              <img
+                src="https://wearecoandco.com/uploads/transforms/0d9d178e109071c355a7ae782f7541dc/10/pexels-fauxels-3182763_d6b61a895725e9d8cf5efd22813ca7ca.webp"
+                alt="Education Services Image"
+              />
+            </li>
+            <li class="best__article__link__item">Education Services</li>
+            <li class="best__article__link__item">Find out more</li>
+          </ul>
+        </a>
+      </div>
+    </section>
+
+    <section class="word">
+      <div class="wrap">
+        <h1 class="word__title init">A few words from people we work with</h1>
+
+        <ul class="word__slide init">
+          <li class="word__slide__item">
+            <ul class="word__slide__item__article">
+              <li class="word__slide__item__article__item">
+                <svg viewBox="0 0 50 43" version="1.1">
+                  <g fill="#000000">
+                    <g transform="translate(-776.000000, -1520.000000)">
+                      <path
+                        d="M776.515,1562.485 C783.348333,1562.485 788.5075,1560.5375 791.9925,1556.6425 C795.4775,1552.7475 797.22,1546.97333 797.22,1539.32 C797.22,1533.30667 796.468333,1527.02 794.965,1520.46 L794.965,1520.46 L776.105,1520.46 L776.105,1538.09 L786.355,1538.09 L786.355,1542.805 C786.355,1546.63167 785.603333,1549.4675 784.1,1551.3125 C782.596667,1553.1575 780.068333,1554.08 776.515,1554.08 L776.515,1554.08 L776.515,1562.485 Z M804.19,1562.485 C811.023333,1562.485 816.216667,1560.5375 819.77,1556.6425 C823.323333,1552.7475 825.1,1546.97333 825.1,1539.32 C825.1,1533.85333 824.28,1527.56667 822.64,1520.46 L822.64,1520.46 L803.78,1520.46 L803.78,1538.09 L814.03,1538.09 L814.03,1542.805 C814.03,1546.63167 813.278333,1549.4675 811.775,1551.3125 C810.271667,1553.1575 807.743333,1554.08 804.19,1554.08 L804.19,1554.08 L804.19,1562.485 Z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </li>
+              <li class="word__slide__item__article__item">
+                "A no messing, straight to the point approach is so refreshing
+                and sets co&co apart from the rest."
+              </li>
+              <li class="word__slide__item__article__item">
+                <img
+                  src="https://wearecoandco.com/uploads/transforms/a51656030cece726ec5a96635ab5393d/1671/madebyshape-avatar_e893beea44ec02f0739b8e4993f57d85.webp"
+                  alt="Madebyshape avatar"
+                />
+
+                <p class="word__slide__item__article__item__info">
+                  <span class="word__slide__item__article__item__info-name">
+                    Andy Golpys
+                  </span>
+                  <span class="word__slide__item__article__item__info-job">
+                    Co-founder, MadeByShape
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="word__slide__item">
+            <ul class="word__slide__item__article">
+              <li class="word__slide__item__article__item">
+                <svg viewBox="0 0 50 43" version="1.1">
+                  <g fill="#000000">
+                    <g transform="translate(-776.000000, -1520.000000)">
+                      <path
+                        d="M776.515,1562.485 C783.348333,1562.485 788.5075,1560.5375 791.9925,1556.6425 C795.4775,1552.7475 797.22,1546.97333 797.22,1539.32 C797.22,1533.30667 796.468333,1527.02 794.965,1520.46 L794.965,1520.46 L776.105,1520.46 L776.105,1538.09 L786.355,1538.09 L786.355,1542.805 C786.355,1546.63167 785.603333,1549.4675 784.1,1551.3125 C782.596667,1553.1575 780.068333,1554.08 776.515,1554.08 L776.515,1554.08 L776.515,1562.485 Z M804.19,1562.485 C811.023333,1562.485 816.216667,1560.5375 819.77,1556.6425 C823.323333,1552.7475 825.1,1546.97333 825.1,1539.32 C825.1,1533.85333 824.28,1527.56667 822.64,1520.46 L822.64,1520.46 L803.78,1520.46 L803.78,1538.09 L814.03,1538.09 L814.03,1542.805 C814.03,1546.63167 813.278333,1549.4675 811.775,1551.3125 C810.271667,1553.1575 807.743333,1554.08 804.19,1554.08 L804.19,1554.08 L804.19,1562.485 Z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </li>
+              <li class="word__slide__item__article__item">
+                "A rare ability to formulate strategies that benefit businesses
+                for the long term, and not just for short lived success."
+              </li>
+              <li class="word__slide__item__article__item">
+                <img
+                  src="https://wearecoandco.com/uploads/transforms/a51656030cece726ec5a96635ab5393d/1765/ascend-avatar-ged_e893beea44ec02f0739b8e4993f57d85.webp"
+                  alt="Ascend avatar ged"
+                />
+
+                <p class="word__slide__item__article__item__info">
+                  <span class="word__slide__item__article__item__info-name">
+                    Ged McPartlin
+                  </span>
+                  <span class="word__slide__item__article__item__info-job">
+                    Managing Director, Ascend
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="word__slide__item">
+            <ul class="word__slide__item__article">
+              <li class="word__slide__item__article__item">
+                <svg viewBox="0 0 50 43" version="1.1">
+                  <g fill="#000000">
+                    <g transform="translate(-776.000000, -1520.000000)">
+                      <path
+                        d="M776.515,1562.485 C783.348333,1562.485 788.5075,1560.5375 791.9925,1556.6425 C795.4775,1552.7475 797.22,1546.97333 797.22,1539.32 C797.22,1533.30667 796.468333,1527.02 794.965,1520.46 L794.965,1520.46 L776.105,1520.46 L776.105,1538.09 L786.355,1538.09 L786.355,1542.805 C786.355,1546.63167 785.603333,1549.4675 784.1,1551.3125 C782.596667,1553.1575 780.068333,1554.08 776.515,1554.08 L776.515,1554.08 L776.515,1562.485 Z M804.19,1562.485 C811.023333,1562.485 816.216667,1560.5375 819.77,1556.6425 C823.323333,1552.7475 825.1,1546.97333 825.1,1539.32 C825.1,1533.85333 824.28,1527.56667 822.64,1520.46 L822.64,1520.46 L803.78,1520.46 L803.78,1538.09 L814.03,1538.09 L814.03,1542.805 C814.03,1546.63167 813.278333,1549.4675 811.775,1551.3125 C810.271667,1553.1575 807.743333,1554.08 804.19,1554.08 L804.19,1554.08 L804.19,1562.485 Z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </li>
+              <li class="word__slide__item__article__item">
+                "co&co know their clients inside out and never miss a trick when
+                it comes to getting the best return for a client’s budget."
+              </li>
+              <li class="word__slide__item__article__item">
+                <img
+                  src="https://wearecoandco.com/uploads/transforms/a51656030cece726ec5a96635ab5393d/1827/ray_e893beea44ec02f0739b8e4993f57d85.webp"
+                  alt="Ray"
+                />
+
+                <p class="word__slide__item__article__item__info">
+                  <span class="word__slide__item__article__item__info-name">
+                    Ray Sherlock
+                  </span>
+                  <span class="word__slide__item__article__item__info-job">
+                    Founder, Engage Hub
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="word__slide__item">
+            <ul class="word__slide__item__article">
+              <li class="word__slide__item__article__item">
+                <svg viewBox="0 0 50 43" version="1.1">
+                  <g fill="#000000">
+                    <g transform="translate(-776.000000, -1520.000000)">
+                      <path
+                        d="M776.515,1562.485 C783.348333,1562.485 788.5075,1560.5375 791.9925,1556.6425 C795.4775,1552.7475 797.22,1546.97333 797.22,1539.32 C797.22,1533.30667 796.468333,1527.02 794.965,1520.46 L794.965,1520.46 L776.105,1520.46 L776.105,1538.09 L786.355,1538.09 L786.355,1542.805 C786.355,1546.63167 785.603333,1549.4675 784.1,1551.3125 C782.596667,1553.1575 780.068333,1554.08 776.515,1554.08 L776.515,1554.08 L776.515,1562.485 Z M804.19,1562.485 C811.023333,1562.485 816.216667,1560.5375 819.77,1556.6425 C823.323333,1552.7475 825.1,1546.97333 825.1,1539.32 C825.1,1533.85333 824.28,1527.56667 822.64,1520.46 L822.64,1520.46 L803.78,1520.46 L803.78,1538.09 L814.03,1538.09 L814.03,1542.805 C814.03,1546.63167 813.278333,1549.4675 811.775,1551.3125 C810.271667,1553.1575 807.743333,1554.08 804.19,1554.08 L804.19,1554.08 L804.19,1562.485 Z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </li>
+              <li class="word__slide__item__article__item">
+                "If there is one thing co&co’s clients can rely on Jordan and
+                her team to deliver, it’s results. I look forward to working
+                with co&co again."
+              </li>
+              <li class="word__slide__item__article__item">
+                <img
+                  src="https://wearecoandco.com/uploads/transforms/a51656030cece726ec5a96635ab5393d/2080/hayley-clickoo_e893beea44ec02f0739b8e4993f57d85.webp"
+                  alt="Hayley clickoo"
+                />
+
+                <p class="word__slide__item__article__item__info">
+                  <span class="word__slide__item__article__item__info-name">
+                    Hayley Kenyon
+                  </span>
+                  <span class="word__slide__item__article__item__info-job">
+                    Account Manager, Clickoo
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="word__slide__btn">
+          <div class="word__slide__progressBar"></div>
+
+          <button class="word__slide__btn-prev"></button>
+          <button class="word__slide__btn-next"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="folk">
+      <div class="folk__image">
+        <img
+          class="init"
+          src="https://wearecoandco.com/uploads/transforms/526d6ad403dc39030454d952c1c75d99/2234/coandco-brand-gen-5b_24f70b2400106f0946faa2d8ed6c1bc4.webp"
+          alt="Image"
+        />
+      </div>
+
+      <div class="wrap">
+        <h1 class="folk__title init">
+          Some of the fine folk we've worked with
+        </h1>
+
+        <ul class="folk__list">
+          <li class="folk__list__item init">
+            <img
+              src="https://wearecoandco.com/uploads/transforms/a7372ffc349224ff877c447a52fac611/1622/madebyshape-brandlogo_aa93d8ee9a3cc573b9a01b328410e8b2.webp"
+              alt="Madebyshape brandlogo"
+            />
+          </li>
+
+          <li class="folk__list__item init">
+            <img
+              src="https://wearecoandco.com/uploads/transforms/a7372ffc349224ff877c447a52fac611/1599/tio-logo_aa93d8ee9a3cc573b9a01b328410e8b2.webp"
+              alt="Tio logo"
+            />
+          </li>
+
+          <li class="folk__list__item init">
+            <img
+              src="https://wearecoandco.com/uploads/transforms/a7372ffc349224ff877c447a52fac611/1717/what-marketing-brand-logo_aa93d8ee9a3cc573b9a01b328410e8b2.webp"
+              alt="What marketing brand logo"
+            />
+          </li>
+
+          <li class="folk__list__item init">
+            <img
+              src="https://wearecoandco.com/uploads/transforms/a7372ffc349224ff877c447a52fac611/1778/beech-logo_aa93d8ee9a3cc573b9a01b328410e8b2.webp"
+              alt="Beech logo"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="see">
+      <div class="wrap">
+        <h1 class="see__title init">We say it as we see it</h1>
+
+        <ul class="see__slide init">
+          <li class="see__slide__item">
+            <a href="#">
+              <ul class="see__slide__item__article">
+                <li class="see__slide__item__article__item">
+                  <img
+                    src="https://wearecoandco.com/uploads/transforms/526d6ad403dc39030454d952c1c75d99/2107/coandco-brand-gen-13_e893beea44ec02f0739b8e4993f57d85.webp"
+                    alt="Image"
+                  />
+                </li>
+                <li class="see__slide__item__article__item">⏲ 5 minutes</li>
+                <li class="see__slide__item__article__item">
+                  Covid-19: Our experience as a new business
+                </li>
+              </ul>
+            </a>
+          </li>
+
+          <li class="see__slide__item">
+            <a href="#">
+              <ul class="see__slide__item__article">
+                <li class="see__slide__item__article__item">
+                  <img
+                    src="https://wearecoandco.com/uploads/transforms/bc9e33244d2d8a7bebbefa89bb319b9f/3131/The-big-christmas-advert-debate_82f696818da869e74650422d081ea329.webp"
+                    alt="Image"
+                  />
+                </li>
+                <li class="see__slide__item__article__item">⏲ 7 minutes</li>
+                <li class="see__slide__item__article__item">
+                  2020: The big Christmas advert debate
+                </li>
+              </ul>
+            </a>
+          </li>
+
+          <li class="see__slide__item">
+            <a href="#">
+              <ul class="see__slide__item__article">
+                <li class="see__slide__item__article__item">
+                  <img
+                    src="https://wearecoandco.com/uploads/transforms/526d6ad403dc39030454d952c1c75d99/2121/coandco-brand-gen-27_e893beea44ec02f0739b8e4993f57d85.webp"
+                    alt="Image"
+                  />
+                </li>
+                <li class="see__slide__item__article__item">⏲ 9 minutes</li>
+                <li class="see__slide__item__article__item">
+                  5 reasons why marketing should be the last thing you turn off
+                </li>
+              </ul>
+            </a>
+          </li>
+
+          <li class="see__slide__item">
+            <a href="#">
+              <ul class="see__slide__item__article">
+                <li class="see__slide__item__article__item">
+                  <img
+                    src="https://wearecoandco.com/uploads/transforms/526d6ad403dc39030454d952c1c75d99/2106/coandco-brand-gen-12_82f696818da869e74650422d081ea329.webp"
+                    alt="Image"
+                  />
+                </li>
+                <li class="see__slide__item__article__item">⏲ 6 minutes</li>
+                <li class="see__slide__item__article__item">
+                  Why we do what we do
+                </li>
+              </ul>
+            </a>
+          </li>
+
+          <li class="see__slide__item">
+            <a href="#">
+              <ul class="see__slide__item__article">
+                <li class="see__slide__item__article__item">
+                  <img
+                    src="https://wearecoandco.com/uploads/transforms/526d6ad403dc39030454d952c1c75d99/2120/coandco-brand-gen-26_e893beea44ec02f0739b8e4993f57d85.webp"
+                    alt="Image"
+                  />
+                </li>
+                <li class="see__slide__item__article__item">⏲ 6 minutes</li>
+                <li class="see__slide__item__article__item">
+                  The importance of brand identity and owning your sh*t
+                </li>
+              </ul>
+            </a>
+          </li>
+
+          <li class="see__slide__item">
+            <a href="#">
+              <ul class="see__slide__item__article">
+                <li class="see__slide__item__article__item">
+                  <img
+                    src="https://wearecoandco.com/uploads/transforms/bc9e33244d2d8a7bebbefa89bb319b9f/3009/Advice-for-new-graduates.-jpg_82f696818da869e74650422d081ea329.webp"
+                    alt="Image"
+                  />
+                </li>
+                <li class="see__slide__item__article__item">⏲ 6 minutes</li>
+                <li class="see__slide__item__article__item">
+                  Advice for new graduates: 5 tips for how to get ahead in a
+                  tough market.
+                </li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+
+        <div class="see__slide__btn">
+          <div class="see__slide__progressBar"></div>
+
+          <button class="see__slide__btn-prev"></button>
+          <button class="see__slide__btn-next"></button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <svg viewBox="0 0 384 91">
+        <path
+          d="M517.2 1271c-2.7-.7-5.6-1.2-8.2-2.2-9.8-3.9-15.6-13.3-15.5-24.8.1-8.6 2.7-16.2 10-21.4 4-2.8 8.6-3.9 13.8-4-1.1-1.5-1.9-2.7-2.8-3.9-3.9-5.2-5.8-11-4.6-17.4 1.6-9.4 9.4-16 19.6-16.8 3-.2 6.1-.3 9 .2 11.1 1.7 17.3 8.3 19.3 20.2.4 2.2.4 4.5.7 6.9h-13.8c-.1-1.9-.2-3.9-.4-5.9-.6-5.5-4.5-9.2-10-9.4-5.8-.3-9.9 2.5-10.9 7.5-.7 3.6.1 6.9 2.3 9.7 4 5.2 8.2 10.4 12.4 15.5 11.7 14.2 23.4 28.4 35.1 42.7.5.5.8 1.1 1.6 2.1-4.9 0-9.4.1-13.9-.1-.7 0-1.5-.7-2-1.3-4.5-5-8.9-10-13.3-15-.5-.6-.9-1.3-1.7-2.4-.7 2-1.2 3.3-1.5 4.5-2.4 8.3-8.2 12.9-16.5 14.7-.6.1-1.1.3-1.7.5-2.3.1-4.7.1-7 .1zm-11.1-27.1c0 8.7 6.1 14.8 14.9 14.8 8.1 0 13.8-5.7 13.9-13.7 0-8.5-6.8-15.2-15.3-15.3-8.3.1-13.5 5.5-13.5 14.2zM680.9 1271c-3.5-.9-7.1-1.4-10.4-2.7-11.9-4.8-18.3-14.1-20.2-26.6-1.1-7.2-.6-14.4 2.2-21.2 5.8-13.7 16.7-20.1 31.1-20.5 13.3-.4 24.5 4 31.7 15.9 4.9 8.1 5.8 17.1 4.4 26.2-2.5 16.2-12.7 26-28.9 28.5-.5.1-1 .3-1.4.4h-8.5zm-16.4-35.5c.3 2.2.4 4.5.8 6.7 1.9 9.6 9.2 15.7 19 16.2 9.2.5 17.1-5.2 19.9-14.2 1.5-4.9 1.6-9.9.7-14.9-3.7-18.9-23.7-20.3-32.9-12.3-5.6 4.8-7.3 11.3-7.5 18.5zM444.9 1271c-2.5-.6-5.1-1-7.6-1.7-13.8-4.2-22.4-15.8-23.3-31.2-.5-9.1 1.1-17.7 6.8-25.1 9-11.5 21.2-14.5 35-12.6 10.7 1.5 19 6.9 24.3 16.6 6.3 11.5 6.5 33.3-6 44.8-5.2 4.8-11.4 7.6-18.3 8.7-.8.1-1.6.3-2.4.5h-8.5zm-16.3-36c.3 2.6.4 4.8.8 6.9 1.8 9.6 9.2 16 19.1 16.5 9.5.5 17.5-5.4 20.1-14.8 1.3-4.9 1.3-9.8.4-14.7-1.8-9.7-9.2-16.1-19.1-16.4-9.8-.4-17.6 5.4-20.1 15.1-.7 2.4-.9 5.1-1.2 7.4zM604.6 1271c-2.8-.6-5.6-1-8.3-1.9-12.5-4.1-20.8-15.2-21.8-28.8-.6-7.9 0-15.7 3.7-23 6-11.9 18.3-18.3 32.8-17.4 11.4.7 20.8 5 26.7 15.1 1.9 3.3 3 7.2 4.7 11.3-5.5 0-10.3 0-15-.1-.4 0-1-.9-1.2-1.5-2.7-7.8-8.2-11.9-16.7-12.3-8-.4-15.2 3.8-18.1 10.9-3.1 7.6-3.1 15.4-.4 23.1 2.8 7.7 9.8 12.2 18.2 12 8.5-.2 14.3-4.5 17.1-12.6.2-.6 1-1.4 1.5-1.4 4.6-.1 9.2-.1 14-.1-1.3 7.9-4.7 14.4-10.8 19.4-4.6 3.8-10 6-15.9 6.8-.7.1-1.3.3-1.9.5h-8.6zM368.6 1271c-2.5-.5-5.1-.9-7.6-1.7-10.3-3.3-17.3-10.2-20.6-20.6-2.8-8.6-2.8-17.3-.3-26 4.5-15.3 18.4-24.1 35.3-22.9 11.3.8 20.6 5.1 26.4 15.1 1.9 3.3 3 7.2 4.7 11.3h-14.8c-.5 0-1.1-.6-1.3-1.1-3.9-9.5-10.2-13.6-19.6-12.7-9 .9-15.2 6.6-16.9 16.2-1.3 6.8-1 13.5 2.2 19.9 3.4 6.8 10.5 10.5 18.5 9.8 8.1-.7 13.4-5 15.8-12.8.1-.3.2-.6.4-1.1h15.1c-1.5 9-5.9 16.2-13.5 21.2-4 2.6-8.4 4.1-13.1 4.8-.7.1-1.5.3-2.2.5-2.8.1-5.7.1-8.5.1z"
+          transform="translate(-337 -1180)"
+        ></path>
+      </svg>
+
+      <div class="wrap">
+        <a class="footer__logo init" href="#">
+          <svg viewBox="0 0 384 91">
+            <path
+              d="M517.2 1271c-2.7-.7-5.6-1.2-8.2-2.2-9.8-3.9-15.6-13.3-15.5-24.8.1-8.6 2.7-16.2 10-21.4 4-2.8 8.6-3.9 13.8-4-1.1-1.5-1.9-2.7-2.8-3.9-3.9-5.2-5.8-11-4.6-17.4 1.6-9.4 9.4-16 19.6-16.8 3-.2 6.1-.3 9 .2 11.1 1.7 17.3 8.3 19.3 20.2.4 2.2.4 4.5.7 6.9h-13.8c-.1-1.9-.2-3.9-.4-5.9-.6-5.5-4.5-9.2-10-9.4-5.8-.3-9.9 2.5-10.9 7.5-.7 3.6.1 6.9 2.3 9.7 4 5.2 8.2 10.4 12.4 15.5 11.7 14.2 23.4 28.4 35.1 42.7.5.5.8 1.1 1.6 2.1-4.9 0-9.4.1-13.9-.1-.7 0-1.5-.7-2-1.3-4.5-5-8.9-10-13.3-15-.5-.6-.9-1.3-1.7-2.4-.7 2-1.2 3.3-1.5 4.5-2.4 8.3-8.2 12.9-16.5 14.7-.6.1-1.1.3-1.7.5-2.3.1-4.7.1-7 .1zm-11.1-27.1c0 8.7 6.1 14.8 14.9 14.8 8.1 0 13.8-5.7 13.9-13.7 0-8.5-6.8-15.2-15.3-15.3-8.3.1-13.5 5.5-13.5 14.2zM680.9 1271c-3.5-.9-7.1-1.4-10.4-2.7-11.9-4.8-18.3-14.1-20.2-26.6-1.1-7.2-.6-14.4 2.2-21.2 5.8-13.7 16.7-20.1 31.1-20.5 13.3-.4 24.5 4 31.7 15.9 4.9 8.1 5.8 17.1 4.4 26.2-2.5 16.2-12.7 26-28.9 28.5-.5.1-1 .3-1.4.4h-8.5zm-16.4-35.5c.3 2.2.4 4.5.8 6.7 1.9 9.6 9.2 15.7 19 16.2 9.2.5 17.1-5.2 19.9-14.2 1.5-4.9 1.6-9.9.7-14.9-3.7-18.9-23.7-20.3-32.9-12.3-5.6 4.8-7.3 11.3-7.5 18.5zM444.9 1271c-2.5-.6-5.1-1-7.6-1.7-13.8-4.2-22.4-15.8-23.3-31.2-.5-9.1 1.1-17.7 6.8-25.1 9-11.5 21.2-14.5 35-12.6 10.7 1.5 19 6.9 24.3 16.6 6.3 11.5 6.5 33.3-6 44.8-5.2 4.8-11.4 7.6-18.3 8.7-.8.1-1.6.3-2.4.5h-8.5zm-16.3-36c.3 2.6.4 4.8.8 6.9 1.8 9.6 9.2 16 19.1 16.5 9.5.5 17.5-5.4 20.1-14.8 1.3-4.9 1.3-9.8.4-14.7-1.8-9.7-9.2-16.1-19.1-16.4-9.8-.4-17.6 5.4-20.1 15.1-.7 2.4-.9 5.1-1.2 7.4zM604.6 1271c-2.8-.6-5.6-1-8.3-1.9-12.5-4.1-20.8-15.2-21.8-28.8-.6-7.9 0-15.7 3.7-23 6-11.9 18.3-18.3 32.8-17.4 11.4.7 20.8 5 26.7 15.1 1.9 3.3 3 7.2 4.7 11.3-5.5 0-10.3 0-15-.1-.4 0-1-.9-1.2-1.5-2.7-7.8-8.2-11.9-16.7-12.3-8-.4-15.2 3.8-18.1 10.9-3.1 7.6-3.1 15.4-.4 23.1 2.8 7.7 9.8 12.2 18.2 12 8.5-.2 14.3-4.5 17.1-12.6.2-.6 1-1.4 1.5-1.4 4.6-.1 9.2-.1 14-.1-1.3 7.9-4.7 14.4-10.8 19.4-4.6 3.8-10 6-15.9 6.8-.7.1-1.3.3-1.9.5h-8.6zM368.6 1271c-2.5-.5-5.1-.9-7.6-1.7-10.3-3.3-17.3-10.2-20.6-20.6-2.8-8.6-2.8-17.3-.3-26 4.5-15.3 18.4-24.1 35.3-22.9 11.3.8 20.6 5.1 26.4 15.1 1.9 3.3 3 7.2 4.7 11.3h-14.8c-.5 0-1.1-.6-1.3-1.1-3.9-9.5-10.2-13.6-19.6-12.7-9 .9-15.2 6.6-16.9 16.2-1.3 6.8-1 13.5 2.2 19.9 3.4 6.8 10.5 10.5 18.5 9.8 8.1-.7 13.4-5 15.8-12.8.1-.3.2-.6.4-1.1h15.1c-1.5 9-5.9 16.2-13.5 21.2-4 2.6-8.4 4.1-13.1 4.8-.7.1-1.5.3-2.2.5-2.8.1-5.7.1-8.5.1z"
+              transform="translate(-337 -1180)"
+            ></path>
+          </svg>
+        </a>
+
+        <div class="footer__menu">
+          <h1 class="footer__menu__title init">
+            You’ve come this far.
+            <a href="#">Let's chat</a>
+          </h1>
+
+          <ul class="footer__menu__list">
+            <li class="footer__menu__list__item">
+              <ul class="footer__menu__list__item__link">
+                <li class="footer__menu__list__item__link__item">Navigate</li>
+                <li class="footer__menu__list__item__link__item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="footer__menu__list__item__link__item">
+                  <a href="#">Who we are</a>
+                </li>
+                <li class="footer__menu__list__item__link__item">
+                  <a href="#">What we do</a>
+                </li>
+                <li class="footer__menu__list__item__link__item">
+                  <a href="#">What we think</a>
+                </li>
+                <li class="footer__menu__list__item__link__item">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer__menu__list__item">
+              <ul class="footer__menu__list__item__link">
+                <li class="footer__menu__list__item__link__item">Chat</li>
+                <li class="footer__menu__list__item__link__item">
+                  <a href="#">hello@abcde.com</a>
+                </li>
+                <li class="footer__menu__list__item__link__item">
+                  <a href="#">010 1234 5678</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer__menu__list__item">
+              <ul class="footer__menu__list__item__link">
+                <li class="footer__menu__list__item__link__item">Stalk</li>
+                <li class="footer__menu__list__item__link__item">
+                  <a href="#">Instagram</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <a class="footer__btn" href="#"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
